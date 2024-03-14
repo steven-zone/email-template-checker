@@ -16,7 +16,6 @@ app.get('/email-verfication', (req, res) => {
 
     res.render('email-verfication', { otpArr: otp, validity: validity }, function(err, html) {
         if (err) {
-            console.log('here')
             console.log(err);
             res.send('An error occurred');
         } else {
@@ -31,7 +30,6 @@ app.get('/password-reset', (req, res) => {
 
     res.render('password-reset', { otpArr: otp, validity: validity }, function(err, html) {
         if (err) {
-            console.log('here')
             console.log(err);
             res.send('An error occurred');
         } else {
