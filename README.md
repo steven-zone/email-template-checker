@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script is meticulously crafted for the purpose of validating and testing email templates, ensuring they meet the required standards for compatibility and responsiveness across various email clients.
+This script is crafted for the purpose of validating and testing email templates.
 
 ## Prerequisites
 
