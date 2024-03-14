@@ -41,4 +41,3 @@ npm run dev
 4. Review the output for validation results and actionable recommendations to improve your email templates.
 
 
-
