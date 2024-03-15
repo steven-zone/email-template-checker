@@ -8,7 +8,6 @@ This script is crafted for the purpose of validating and testing email templates
 
 Before you begin, make sure you have the following installed on your system:
 - **Node.js**: Version 12 or higher is recommended.
-- **HTML Parsing Package**: An installed package for parsing and manipulating HTML, such as `jsdom`.
 
 ## Installation
 
