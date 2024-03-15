@@ -1,5 +1,4 @@
 const express = require('express');
-const { engine } = require('express-handlebars');
 
 const app = express();
 const port = 3000;
@@ -11,10 +10,9 @@ app.set('views', './views');
 
 // Route to render the email verification page
 app.get('/email-verfication', (req, res) => {
-    const otp = "3234".split(''); // Example OTP split into an array
-    const validity = 15; // OTP validity time in minutes
-
-    res.render('email-verfication', { otpArr: otp, validity: validity }, function(err, html) {
+    const mailData= { otpArr: [1,2,3,4], validity: 15 };
+    
+    res.render('email-verfication', mailData, function(err, html) {
         if (err) {
             console.log(err);
             res.send('An error occurred');
@@ -25,10 +23,9 @@ app.get('/email-verfication', (req, res) => {
 });
 
 app.get('/password-reset', (req, res) => {
-    const otp = "3234".split(''); // Example OTP split into an array
-    const validity = 15; // OTP validity time in minutes
+    const mailData ={passwordResetLink: 'http://localhost:3000/reset-password?token=1234'};
 
-    res.render('password-reset', { otpArr: otp, validity: validity }, function(err, html) {
+    res.render('password-reset', mailData, function(err, html) {
         if (err) {
             console.log(err);
             res.send('An error occurred');
